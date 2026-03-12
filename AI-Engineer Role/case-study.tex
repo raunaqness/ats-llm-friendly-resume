@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[sfdefault]{roboto}
+\pagenumbering{gobble}
+
+\begin{document}
+
+{\LARGE \textbf{Case Study}}\\
+\textbf{Project: LLM-Based Customer Support Chatbot (POC)}\\
+\textbf{Organization:} Aptos India\\
+\textbf{Role:} Machine Learning Engineer
+
+\section*{Problem}
+Support teams managing a B2B retail analytics dashboard were spending significant time handling repetitive, knowledge-heavy queries. Existing workflows had three critical issues:
+\begin{itemize}[leftmargin=1.2em]
+  \item High manual dependency for common support questions
+  \item Inconsistent answer quality due to scattered internal documentation
+  \item Limited ability to scale high-quality responses across growing customer usage
+\end{itemize}
+
+\section*{Goal}
+Build an internal LLM-powered support assistant that can provide context-aware, reliable answers from internal sources while improving response quality and reducing manual effort.
+
+\section*{System Design}
+\textbf{Architecture components}
+\begin{itemize}[leftmargin=1.2em]
+  \item API layer for request orchestration and response delivery
+  \item Retrieval pipeline over internal knowledge and analytics metadata
+  \item Prompt templates with grounding constraints
+  \item Evaluation and monitoring loop for output quality
+  \item Containerized deployment for controlled experimentation and scale
+\end{itemize}
+
+\textbf{Core technical choices}
+\begin{itemize}[leftmargin=1.2em]
+  \item Python + FastAPI for service orchestration
+  \item RAG workflow using vector retrieval and context selection
+  \item LangChain/LangGraph-based orchestration patterns
+  \item Vertex AI and managed cloud components for operational reliability
+  \item Dockerized deployment integrated with MLOps practices
+\end{itemize}
+
+\section*{Execution Approach}
+\textbf{1. Retrieval quality first}
+I started by improving retrieval relevance so prompts received precise context. This reduced unsupported generations and improved factual grounding.
+
+\textbf{2. Prompt versioning and evaluation}
+I introduced structured prompt versions and compared them through offline tests and runtime metrics to improve consistency and tone while preserving factual correctness.
+
+\textbf{3. Production readiness}
+I containerized the pipeline and added monitoring for failure patterns, response quality drift, and operational stability to support iterative improvement.
+
+\section*{Results}
+\begin{itemize}[leftmargin=1.2em]
+  \item Reduced incorrect answers by 35\% through retrieval and prompt optimization
+  \item Reduced dependency on manual support teams by 30\%
+  \item Enabled faster iteration and more stable deployment via containerized MLOps workflows
+\end{itemize}
+
+\section*{What This Demonstrates for AISEO}
+This project demonstrates practical capability in building LLM-powered content/answer systems where quality, relevance, and operational reliability are equally important. The same approach translates well to GEO/SEO tooling: retrieval-driven answer quality, prompt-controlled output behavior, measurable evaluation loops, and scalable backend architecture.
+
+\section*{Technology Stack}
+Python, FastAPI, RAG, LangChain, LangGraph, Vertex AI, Vector DB, Docker, MLOps.
+
+\end{document}

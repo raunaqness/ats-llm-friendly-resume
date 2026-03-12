@@ -1,0 +1,120 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\usepackage[sfdefault]{roboto}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.52in}
+\addtolength{\textheight}{1.08in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSectionList}{\begin{itemize}[leftmargin=0.15in,label={},topsep=3pt,itemsep=6pt,parsep=0pt,partopsep=0pt]}
+\newcommand{\resumeSectionListEnd}{\end{itemize}}
+\newcommand{\resumeSkillList}{\begin{itemize}[leftmargin=0.15in,label={},topsep=2pt,itemsep=2pt,parsep=0pt,partopsep=0pt]}
+\newcommand{\resumeSkillListEnd}{\end{itemize}}
+\newcommand{\resumeBulletList}{\begin{itemize}[leftmargin=1.4em,label=•,topsep=2pt,itemsep=2pt,parsep=0pt,partopsep=0pt]}
+\newcommand{\resumeBulletListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Gur Raunaq Singh} \\
+  \small +91-9015154091 $|$ \href{mailto:raunaq.soni@gmail.com}{raunaq.soni@gmail.com} $|$
+  \href{https://www.linkedin.com/in/gurraunaqsingh/}{linkedin.com/in/gurraunaqsingh} $|$
+  \href{https://github.com/raunaqness}{github.com/raunaqness}
+\end{center}
+
+\section*{Summary}
+AI/ML and backend engineer with 8+ years of experience building production systems across ML platforms, high-volume data pipelines, and LLM applications. Strong track record in Python, cloud infrastructure, RAG systems, and reliable software for sensitive, high-stakes workflows with auditability, resilience, and scale requirements.
+
+\section{Technical Skills}
+\resumeSkillList
+  \resumeItem{\textbf{AI/ML}: LLMs, RAG, LangChain, LangGraph, Agentic AI, prompt evaluation, model monitoring}
+  \resumeItem{\textbf{Backend \& Data}: Python, FastAPI, Django, SQL, PostgreSQL, Redis, Kafka}
+  \resumeItem{\textbf{Cloud \& Infra}: GCP, AWS, Kubernetes, Docker, Terraform, CI/CD}
+  \resumeItem{\textbf{Systems}: distributed pipelines, workflow orchestration, n8n, audit logging, access control}
+\resumeSkillListEnd
+
+\section{Experience}
+\resumeSectionList
+  \resumeSubheading
+      {Aptos India}{Jan 2023 -- Present}
+      {Machine Learning Engineer}{Bangalore, India}
+      \resumeBulletList
+          \resumeItem{Built Agentic AI applications and workflow automation systems using LLM orchestration patterns and n8n, enabling multi-step task execution, API integrations, and reliable human-in-the-loop workflows.}
+          \resumeItem{Built a Kubernetes-native ML control plane for workload-aware scheduling, checkpoint recovery, and production job lifecycle management in SLA-bound environments.}
+          \resumeItem{Designed enterprise RAG and LLM workflows over internal knowledge and analytics metadata, improving response quality and reducing hallucinations by 35\%.}
+          \resumeItem{Architected secure data pipelines on GCP with IAM controls, auditability, and observability; improved processing SLAs by 35\% and reduced cloud spend by 60\% (about USD 240K annually).}
+      \resumeBulletListEnd
+
+  \resumeSubheading
+      {Turing.com}{Apr 2022 -- Dec 2022}
+      {Senior Software Engineer}{India (Remote)}
+      \resumeBulletList
+          \resumeItem{Implemented end-to-end ML pipelines for ingestion, training, validation, and deployment using Python, Airflow, Docker, and GCP, while standardizing CI/CD and model versioning workflows that cut deployment time by 60\% and improved production reliability in a remote-first engineering environment.}
+      \resumeBulletListEnd
+
+  \resumeSubheading
+      {Clickpost Pvt. Ltd.}{Apr 2021 -- Apr 2022}
+      {Senior Software Engineer}{Bangalore, India}
+      \resumeBulletList
+          \resumeItem{Built a high-accuracy reconciliation platform for large transactional datasets, reducing cycle time by 95\% from days to minutes.}
+          \resumeItem{Developed scalable backend APIs and ingestion pipelines with strong data integrity, traceability, and operational reliability requirements.}
+      \resumeBulletListEnd
+
+  \resumeSubheading
+      {Veda Labs Pvt. Ltd.}{Jul 2018 -- Apr 2021}
+      {Software Engineer}{New Delhi, India}
+      \resumeBulletList
+          \resumeItem{Developed containerized computer-vision pipelines and Kafka-based streaming systems for real-time analytics workloads.}
+      \resumeBulletListEnd
+\resumeSectionListEnd
+
+\section{Projects}
+\resumeSectionList
+  \resumeItem{\textbf{Stateful AI Travel Agent}: Built a memory-aware multi-agent system with LangGraph, tool orchestration, and persistent conversational state. \href{https://github.com/raunaqness/ai-travel-agent}{GitHub} $|$ \href{https://ai-travel-agent.fly.dev/}{Demo}}
+\resumeSectionListEnd
+
+\section{Education}
+\resumeSectionList
+  \resumeSubheading
+      {Indraprastha University}{Aug 2014 -- Jun 2018}
+      {Bachelor of Technology -- Computer Science Engineering}{New Delhi, India}
+\resumeSectionListEnd
+
+\end{document}

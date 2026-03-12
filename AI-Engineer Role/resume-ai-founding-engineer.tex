@@ -1,0 +1,150 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% Font options
+\usepackage[sfdefault]{roboto}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Gur Raunaq Singh} \\
+  \small +91-9015154091 $|$ \href{mailto:raunaq.soni@gmail.com}{raunaq.soni@gmail.com} $|$
+  \href{https://www.linkedin.com/in/gurraunaqsingh/}{linkedin.com/in/gurraunaqsingh} $|$
+  \href{https://github.com/raunaqness}{github.com/raunaqness} $|$ Bangalore, India
+\end{center}
+
+\section*{Summary}
+Senior AI/ML and backend engineer with 8+ years of experience building production-grade intelligent systems, from data and API platforms to LLM-powered applications. Strong track record in Python-first microservices, RAG architectures, prompt engineering, and humanization-focused output quality evaluation across enterprise environments. Hands-on with cloud-native MLOps on GCP/AWS and building AI content systems aligned with SEO/GEO objectives for relevance, quality, and scalability.
+
+\section{Technical Skills}
+\resumeSubHeadingList
+  \resumeItem{\textbf{AI/ML}: LLMs, RAG, LangChain, LangGraph, Model Monitoring}
+  \resumeItem{\textbf{Cloud \& Infra}: Azure (AKS, App Services), AWS, Kubernetes, Docker, Terraform}
+  \resumeItem{\textbf{Data \& Backend}: Python, SQL, Kafka, Redis, PostgreSQL, FastAPI, Django}
+  \resumeItem{\textbf{MLOps}: CI/CD, MLflow, IAM, Audit Logging, Encryption, SLA Monitoring}
+  \resumeItem{\textbf{Automation}: n8n (workflow automation), API integrations, Webhooks}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingList
+  \resumeSubheading
+      {Aptos India}{Jan 2023 -- Present}
+      {Machine Learning Engineer}{Bangalore, India}
+      \resumeSubHeadingList
+          \resumeItem{\textbf{Project: Aptos One} -- Leading unified commerce platform used by 100+ global retailers, processing billions of transactions annually.}
+          \begin{itemize}[leftmargin=1.4em,label=•]
+              \item \small{Implemented a backend control service with APIs to create, monitor, restart, and manage ML jobs on Kubernetes, supporting workload-based node selection and checkpoint-based restarts.}
+              \item \small{Architected distributed data pipelines using Python, BigQuery, and GCP, reducing batch processing runtime by 40\% and improving data availability SLAs by 35\%.}
+              \item \small{Optimized cloud infrastructure and BigQuery query execution, reducing overall cloud costs by 60\% (about USD 240K annual savings).}
+              \item \small{Modernized legacy monolithic services into scalable cloud-native components, improving scalability, fault tolerance, and maintainability.}
+              \item \small{Technologies: Python, Django, GCP, SQL, Docker, Kubernetes, CI/CD, Redis, Terraform, BigQuery}
+          \end{itemize}
+          \resumeItem{\textbf{Project: LLM-Based Customer Support Chatbot (POC)} -- Internal AI chatbot prototype for a B2B retail analytics dashboard.}
+          \begin{itemize}[leftmargin=1.4em,label=•]
+              \item \small{Designed and built an end-to-end LLM-powered chatbot using open-source models and managed cloud AI services, reducing dependency on manual support teams by 30\%.}
+              \item \small{Integrated internal knowledge bases and analytics metadata with RAG workflows and prompt optimization, reducing incorrect answers by 35\%.}
+              \item \small{Deployed the solution via containerized MLOps workflows, enabling rapid experimentation and scalable inference.}
+              \item \small{Technologies: Python, RAG, LangChain, Vertex AI, LLMs, FastAPI, Vector DB, Prompt Engineering, Docker, LangGraph, MLOps}
+          \end{itemize}
+      \resumeSubHeadingListEnd
+
+  \resumeSubheading
+      {Turing.com}{Apr 2022 -- Dec 2022}
+      {Senior Software Engineer}{India (Remote)}
+      \resumeSubHeadingList
+          \resumeItem{\textbf{Project: End-to-End ML Deployment Platform} -- US-based remote talent platform enabling AI-driven analytics and automation at scale.}
+          \begin{itemize}[leftmargin=1.4em,label=•]
+              \item \small{Designed and implemented end-to-end ML pipelines using Airflow for data ingestion, training, and automated production deployment.}
+              \item \small{Reduced model deployment time by up to 60\% through standardized MLOps practices.}
+              \item \small{Technologies: Python, Django, Airflow, GCP, Docker, MLOps}
+          \end{itemize}
+      \resumeSubHeadingListEnd
+
+  \resumeSubheading
+      {Clickpost Pvt. Ltd.}{Apr 2021 -- Apr 2022}
+      {Senior Software Engineer}{Bangalore, India}
+      \resumeSubHeadingList
+          \resumeItem{\textbf{Project: Cash Reconciliation Automation Platform} -- SaaS logistics platform serving 1k+ enterprise customers handling CoD orders.}
+          \begin{itemize}[leftmargin=1.4em,label=•]
+              \item \small{Designed and built a financial reconciliation system from scratch, processing high-volume transaction data with strict accuracy requirements.}
+              \item \small{Reduced reconciliation cycle time by 95\% (from about 2 days to minutes) by automating reconciliation logic and parallelizing transaction processing, improving operational efficiency and cash flow visibility.}
+              \item \small{Automated large-scale CSV ingestion and backend APIs for financial data processing, supporting rapid business growth.}
+              \item \small{Technologies: Python, Django, PostgreSQL, CSV Pipelines, AWS, AWS Redshift, Docker, Kubernetes, Pandas, Kafka}
+          \end{itemize}
+      \resumeSubHeadingListEnd
+
+  \resumeSubheading
+      {Veda Labs Pvt. Ltd.}{Jul 2018 -- Apr 2021}
+      {Software Engineer}{New Delhi, India}
+      \resumeSubHeadingList
+          \resumeItem{\textbf{Project: Video Analytics Platform} -- Computer vision platform deployed on-premise for retail analytics using CCTV footage.}
+          \begin{itemize}[leftmargin=1.4em,label=•]
+              \item \small{Developed containerized video analytics pipelines for edge devices.}
+              \item \small{Built a Kafka-based streaming architecture for scalable, real-time processing.}
+              \item \small{Technologies: Python, OpenCV, Computer Vision, Kafka, Docker}
+          \end{itemize}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects \& Portfolio}
+\resumeSubHeadingList
+  \resumeItem{\textbf{Stateful AI Travel Agent (LangGraph)}: Built a memory-aware, graph-orchestrated multi-agent system for dynamic planning and tool-based reasoning.}
+  \begin{itemize}[leftmargin=1.4em,label=•,topsep=0pt,partopsep=0pt,parsep=0pt]
+      \item \small{\textbf{Github}: \href{https://github.com/raunaqness/ai-travel-agent}{github.com/raunaqness/ai-travel-agent}}
+      \item \small{\textbf{Demo}: \href{https://ai-travel-agent.fly.dev/}{https://ai-travel-agent.fly.dev/}}
+  \end{itemize}
+  \resumeItem{\textbf{Workflow Automation Platform (n8n + Azure)}: Deployed containerized AI-assisted workflows integrating APIs and LLM services for secure process automation.}
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingList
+  \resumeSubheading
+      {Indraprastha University}{Aug 2014 -- Jun 2018}
+      {Bachelor of Technology -- Computer Science Engineering}{New Delhi, India}
+\resumeSubHeadingListEnd
+
+\end{document}
