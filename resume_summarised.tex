@@ -42,7 +42,7 @@
 \vspace{-1pt}\item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} \hspace{0.4em}\textbar\hspace{0.4em} \textit{#3} & \textit{#4} $|$ \textit{#2} \\
-  \end{tabular*}\vspace{-7pt}
+  \end{tabular*}\vspace{-2pt}
 }
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
@@ -58,15 +58,14 @@
 \end{center}
 
 \section*{Summary}
-Senior AI and ML Systems Architect with 8+ years of experience designing secure, scalable AI platforms in enterprise environments processing high-volume transactional data. Specialized in distributed ML systems, Kubernetes-native orchestration, multi-cloud architectures, and Generative AI (LLMs, RAG, agentic workflows). Strong focus on MLOps, IAM-based access control, auditability, and operational resilience. Experience deploying and managing containerized workflow automation systems (n8n) on cloud infrastructure with secure API and LLM integrations. Immediate joiner.
+AI Engineer with 8 years of software engineering experience, currently specialized in Agentic AI and Generative AI applications (LLMs, RAG, multi-agent systems) over the past 2 years. Brings a strong MLOps foundation from 4 years building and deploying Machine Learning applications, backed by an additional 4 years of full-stack development experience, a well-rounded background spanning the full stack from UI to model deployment to autonomous agents.
 
 \section{Technical Skills}
 \resumeSubHeadingList
-  \resumeItem{\textbf{AI/ML}: LLMs, RAG, LangChain, LangGraph, Embeddings, Semantic Search, Hybrid Retrieval, Reranking, Prompt Engineering, Model Monitoring}
-  \resumeItem{\textbf{Cloud \& Infra}: Azure (AKS, App Services), AWS, Kubernetes, Docker, Terraform}
-  \resumeItem{\textbf{Data \& Backend}: Python, SQL, Kafka, Redis, PostgreSQL, FastAPI, Django, API Development, Webhooks}
-  \resumeItem{\textbf{Vector Databases \& Search}: Pinecone DB, Vector Search, Metadata Filtering, Document Chunking, Retrieval Pipelines}
-  \resumeItem{\textbf{MLOps}: CI/CD, MLflow, IAM, Audit Logging, Encryption, SLA Monitoring}
+  \resumeItem{\textbf{Languages \& Frameworks}: Python, JavaScript, React, FastAPI, Django, Airflow, API Development, Webhooks}
+  \resumeItem{\textbf{Databases}: PostgreSQL, MongoDB, Redis, Kafka, Qdrant, PGVector, BigQuery, Redshift, Vector Search}
+  \resumeItem{\textbf{ML \& AI}: LLMs, RAG, LangChain, LangGraph, Vertex AI, Langfuse, Semantic Search, Hybrid Retrieval, Reranking, Prompt Engineering, Model Monitoring}
+  \resumeItem{\textbf{Cloud}: AWS, GCP, Kubernetes, Docker, Terraform, Jenkins, CI/CD, IAM}
 \resumeSubHeadingListEnd
 
 \section{Experience}
@@ -74,57 +73,47 @@ Senior AI and ML Systems Architect with 8+ years of experience designing secure,
   \resumeSubheading
       {Independent AI Engineer}{Apr 2026 -- Present}
       {Independent AI Engineer}{Remote}
-      \resumeSubHeadingList
-          \resumeItem{Working as a consultant helping teams design and build AI systems, RAG systems, and multi-agent systems.}
-          \resumeItem{Designing and developing AI-powered tools, RAG-based chatbots, and AI agents using Python, LangChain, LangGraph, and FastAPI, with a focus on rapid prototyping and scalable deployment.}
-          \resumeItem{Building and documenting an evolving portfolio of hands-on projects, technical explorations, and open-source contributions: raunaqness.com/projects}
-      \resumeSubHeadingListEnd
+      \begin{itemize}[leftmargin=1.4em,label=•,topsep=4pt,itemsep=4pt,parsep=0pt]
+          \item \small{Working as a consultant designing and building AI systems, RAG-based chatbots, and multi-agent systems using Python, LangChain, LangGraph, and FastAPI, with a focus on rapid prototyping and scalable deployment.}
+      \end{itemize}
 
   \resumeSubheading
       {Aptos India}{Jan 2023 -- Mar 2026}
       {Machine Learning Engineer}{Bangalore, India}
-      \begin{itemize}[leftmargin=1.4em,label=•]
-          \item \small{Architected a Kubernetes-native ML orchestration control plane enabling workload-aware scheduling, checkpoint-based recovery, and distributed job lifecycle management in SLA-bound production environments.}
-          \item \small{Designed secure, fault-tolerant data pipelines on GCP (BigQuery + event-driven workflows), implementing IAM-based access controls, encryption practices, and audit logging while improving processing SLAs by 35\%.}
-          \item \small{Optimized cloud infrastructure and query execution strategies, reducing compute costs by 60\% (about USD 240K annual savings) while modernizing legacy systems into scalable, observable cloud-native components.}
-          \item \small{Designed an enterprise-grade RAG architecture integrating structured analytics metadata and internal knowledge bases to deliver context-aware responses with improved semantic accuracy.}
-          \item \small{Implemented prompt versioning, evaluation workflows, and monitoring mechanisms to reduce hallucinations by 35\% while improving traceability and observability of model outputs.}
-          \item \small{Deployed containerized inference workflows using MLOps practices, enabling controlled experimentation, scalable inference, and secure knowledge isolation via vector database access controls.}
-          \item \small{Technologies: Python, GCP, Vertex AI, BigQuery, LangChain, LangGraph, Kubernetes, Docker, Terraform, Redis, FastAPI, CI/CD, IAM, MLOps}
+      \begin{itemize}[leftmargin=1.4em,label=•,topsep=4pt,itemsep=4pt,parsep=0pt]
+          \item \small{Architected a Kubernetes-native ML orchestration control plane with workload-aware scheduling and checkpoint-based recovery for SLA-bound production environments serving 100+ global retailers.}
+          \item \small{Designed secure, fault-tolerant data pipelines on GCP with IAM-based access controls and audit logging, improving processing SLAs by 35\% while cutting compute costs 60\% (about USD 240K annual savings).}
+          \item \small{Built an enterprise-grade RAG support assistant integrating internal knowledge bases with prompt versioning and monitoring, reducing hallucinations by 35\%.}
       \end{itemize}
 
   \resumeSubheading
       {Turing.com}{Apr 2022 -- Dec 2022}
       {Senior Software Engineer}{India (Remote)}
-      \begin{itemize}[leftmargin=1.4em,label=•]
-          \item \small{Designed and implemented production-grade ML pipelines using Airflow for ingestion, training, validation, and automated deployment.}
-          \item \small{Standardized CI/CD and model versioning practices, reducing deployment time by 60\% and improving controlled production rollouts.}
+      \begin{itemize}[leftmargin=1.4em,label=•,topsep=4pt,itemsep=4pt,parsep=0pt]
+          \item \small{Designed and implemented production-grade ML pipelines using Airflow for ingestion, training, validation, and automated deployment, with standardized CI/CD and model versioning practices that reduced deployment time by 60\%.}
           \item \small{Integrated monitoring and validation checks to enhance production reliability and maintainability of deployed ML systems.}
-          \item \small{Technologies: Python, Django, Airflow, GCP, Docker, MLOps}
       \end{itemize}
 
   \resumeSubheading
       {Clickpost Pvt. Ltd.}{Apr 2021 -- Apr 2022}
       {Senior Software Engineer}{Bangalore, India}
-      \begin{itemize}[leftmargin=1.4em,label=•]
-          \item \small{Designed and built a high-accuracy financial reconciliation system processing large-scale transactional datasets with strict data integrity and traceability requirements.}
-          \item \small{Reduced reconciliation cycle time by 95\% (from about 2 days to minutes) through parallelized processing and automated validation workflows, improving operational efficiency and financial visibility.}
-          \item \small{Architected secure ingestion pipelines and scalable backend APIs under high-availability constraints, ensuring auditability and controlled access to financial data.}
-          \item \small{Technologies: Python, Django, PostgreSQL, AWS, Redshift, Kafka, Docker, Kubernetes}
+      \begin{itemize}[leftmargin=1.4em,label=•,topsep=4pt,itemsep=4pt,parsep=0pt]
+          \item \small{Designed and built a high-accuracy financial reconciliation system processing large-scale transactional datasets for 1,000+ enterprise customers with strict data integrity requirements.}
+          \item \small{Reduced reconciliation cycle time by 95\% (from about 2 days to minutes) through parallelized processing and automated validation workflows.}
       \end{itemize}
 \resumeSubHeadingListEnd
 
 \section{Projects}
-\resumeSubHeadingList
-  \resumeItem{\textbf{ChatDB} -- Conversational database interface enabling natural language queries over structured data with FastAPI, Pydantic, smolagents, Qdrant Vector DB, and LiteLLM.}
-  \resumeItem{\textbf{FluxBox} -- Ultra-lightweight macOS menu bar utility with real-time market tickers, currency conversion, world clocks, hardware monitoring, and Claude API usage tracking, built with Rust and Tauri.}
-\resumeSubHeadingListEnd
+\begin{itemize}[leftmargin=1.4em,label=•,topsep=4pt,itemsep=4pt,parsep=0pt]
+  \item \small{\href{https://chatdb.raunaqness.com/}{\underline{\textbf{ChatDB}}} -- Your personal Data Analyst.}
+  \item \small{\href{https://fluxbox.raunaqness.com/}{\underline{\textbf{FluxBox}}} -- MacOS menu bar utility built with Rust and Tauri.}
+\end{itemize}
 
 \section{Education}
 \resumeSubHeadingList
   \resumeSubheading
-      {Indraprastha University}{Aug 2014 -- Jun 2018}
-      {Bachelor of Technology -- Computer Science Engineering}{New Delhi, India}
+      {Indraprastha University}{2014 -- 2018}
+      {B.Tech. -- Computer Science Engineering}{New Delhi, India}
 \resumeSubHeadingListEnd
 
 \end{document}
