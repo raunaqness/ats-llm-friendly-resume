@@ -41,8 +41,7 @@
 \newcommand{\resumeSubheading}[4]{
 \vspace{-1pt}\item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & #2 \\
-    \textit{#3} & \textit{#4} \\
+    \textbf{#1} \hspace{0.4em}\textbar\hspace{0.4em} \textit{#3} & \textit{#4} $|$ \textit{#2} \\
   \end{tabular*}\vspace{-7pt}
 }
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -59,7 +58,7 @@
 \end{center}
 
 \section*{Summary}
-Senior AI and ML Systems Architect with 8+ years of experience designing secure, scalable AI platforms in enterprise environments processing high-volume transactional data. Specialized in distributed ML systems, Kubernetes-native orchestration, multi-cloud architectures, and Generative AI (LLMs, RAG, agentic workflows). Strong focus on MLOps, IAM-based access control, auditability, and operational resilience. Experience deploying and managing containerized workflow automation systems (n8n) on cloud infrastructure with secure API and LLM integrations.
+Senior AI and ML Systems Architect with 8+ years of experience designing secure, scalable AI platforms in enterprise environments processing high-volume transactional data. Specialized in distributed ML systems, Kubernetes-native orchestration, multi-cloud architectures, and Generative AI (LLMs, RAG, agentic workflows). Strong focus on MLOps, IAM-based access control, auditability, and operational resilience. Experience deploying and managing containerized workflow automation systems (n8n) on cloud infrastructure with secure API and LLM integrations. Immediate joiner.
 
 \section{Technical Skills}
 \resumeSubHeadingList
@@ -74,7 +73,16 @@ Senior AI and ML Systems Architect with 8+ years of experience designing secure,
 \section{Experience}
 \resumeSubHeadingList
   \resumeSubheading
-      {Aptos India}{Jan 2023 -- Present}
+      {Independent AI Engineer}{Apr 2026 -- Present}
+      {Independent AI Engineer}{Remote}
+      \resumeSubHeadingList
+          \resumeItem{Working as a consultant helping teams design and build AI systems, RAG systems, and multi-agent systems.}
+          \resumeItem{Designing and developing AI-powered tools, RAG-based chatbots, and AI agents using Python, LangChain, LangGraph, and FastAPI, with a focus on rapid prototyping and scalable deployment.}
+          \resumeItem{Building and documenting an evolving portfolio of hands-on projects, technical explorations, and open-source contributions: raunaqness.com/projects}
+      \resumeSubHeadingListEnd
+
+  \resumeSubheading
+      {Aptos India}{Jan 2023 -- Mar 2026}
       {Machine Learning Engineer}{Bangalore, India}
       \resumeSubHeadingList
           \resumeItem{\textbf{Project: Aptos One} -- Enterprise Unified Commerce Platform serving 100+ global retailers and processing billions of transactions annually.}
@@ -118,44 +126,19 @@ Senior AI and ML Systems Architect with 8+ years of experience designing secure,
               \item \small{Technologies: Python, Django, PostgreSQL, AWS, Redshift, Kafka, Docker, Kubernetes}
           \end{itemize}
       \resumeSubHeadingListEnd
-
-  \resumeSubheading
-      {Veda Labs Pvt. Ltd.}{Jul 2018 -- Apr 2021}
-      {Software Engineer}{New Delhi, India}
-      \resumeSubHeadingList
-          \resumeItem{\textbf{Project: Video Analytics Platform} -- Computer vision platform deployed on-premise for retail analytics using CCTV footage.}
-          \begin{itemize}[leftmargin=1.4em,label=•]
-              \item \small{Developed containerized video analytics pipelines for edge devices.}
-              \item \small{Built a Kafka-based streaming architecture for scalable, real-time processing.}
-              \item \small{Technologies: Python, OpenCV, Computer Vision, Kafka, Docker}
-          \end{itemize}
-      \resumeSubHeadingListEnd
 \resumeSubHeadingListEnd
 
 \section{Projects}
 \resumeSubHeadingList
+  \resumeItem{\textbf{ChatDB -- Chat with your Database}}
+  \begin{itemize}[leftmargin=1.4em,label=•,topsep=0pt,partopsep=0pt,parsep=0pt]
+      \item \small{Built a conversational database interface enabling natural language queries over structured data with FastAPI, Pydantic, smolagents, Qdrant Vector DB, and LiteLLM.}
+      \item \small{Delivered a lightweight, scalable prototype for database chat with retrieval-powered conversational context and agent orchestration.}
+  \end{itemize}
   \resumeItem{\textbf{FluxBox -- macOS Productivity Menu Bar App (Rust + Tauri)}}
   \begin{itemize}[leftmargin=1.4em,label=•,topsep=0pt,partopsep=0pt,parsep=0pt]
       \item \small{Ultra-lightweight macOS menu bar utility with real-time market tickers, currency conversion, world clocks, hardware monitoring, and Claude API usage tracking. Built with Rust and Tauri for near-zero resource footprint.}
       \item \small{Github: \href{https://github.com/raunaqness/fluxbox}{https://github.com/raunaqness/fluxbox}}
-  \end{itemize}
-  \resumeItem{\textbf{Stateful AI Travel Agent (LangGraph)}}
-  \begin{itemize}[leftmargin=1.4em,label=•,topsep=0pt,partopsep=0pt,parsep=0pt]
-      \item \small{Engineered a graph-orchestrated, memory-aware multi-agent system for dynamic travel planning.}
-      \item \small{Github: \href{https://github.com/raunaqness/ai-travel-agent}{https://github.com/raunaqness/ai-travel-agent}}
-      \item \small{Demo: \href{https://ai-travel-agent.fly.dev/}{https://ai-travel-agent.fly.dev/}}
-  \end{itemize}
-  \resumeItem{\textbf{Multimodal RAG Platform}}
-  \begin{itemize}[leftmargin=1.4em,label=•,topsep=0pt,partopsep=0pt,parsep=0pt]
-      \item \small{Designed and built an enterprise-grade Retrieval-Augmented Generation (RAG) system for unstructured document search and question answering, delivering grounded, context-aware responses with reduced hallucinations.}
-      \item \small{Implemented end-to-end retrieval pipelines including document ingestion, chunking, embedding generation, vector indexing in Pinecone DB, semantic search, metadata filtering, and reranking for high retrieval accuracy.}
-      \item \small{Orchestrated LLM prompt workflows with citation-backed responses, observability, evaluation, and secure multi-tenant access controls, deploying the solution as a scalable production-ready API.}
-      \item \small{Github: \href{https://github.com/raunaqness/rag}{https://github.com/raunaqness/rag}}
-      \item \small{Demo: \href{https://rag.raunaqness.com}{https://rag.raunaqness.com}}
-  \end{itemize}
-  \resumeItem{\textbf{Workflow Automation Platform (n8n + Azure)}}
-  \begin{itemize}[leftmargin=1.4em,label=•,topsep=0pt,partopsep=0pt,parsep=0pt]
-      \item \small{Designed and deployed containerized n8n workflows on Azure integrating APIs and LLM services for secure, scalable process automation.}
   \end{itemize}
 \resumeSubHeadingListEnd
 
