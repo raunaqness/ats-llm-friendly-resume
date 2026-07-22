@@ -44,6 +44,12 @@
     \textbf{#1} \hspace{0.4em}\textbar\hspace{0.4em} \textit{#3} & \textit{#4} $|$ \textit{#2} \\
   \end{tabular*}\vspace{-2pt}
 }
+\newcommand{\resumeSubheadingNoRole}[3]{
+\vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{#3} $|$ \textit{#2} \\
+  \end{tabular*}\vspace{-2pt}
+}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -70,9 +76,9 @@ AI Engineer with 8 years of software engineering experience, currently specializ
 
 \section{Experience}
 \resumeSubHeadingList
-  \resumeSubheading
+  \resumeSubheadingNoRole
       {Independent AI Engineer}{Apr 2026 -- Present}
-      {Independent AI Engineer}{Remote}
+      {Remote}
       \begin{itemize}[leftmargin=1.4em,label=•,topsep=4pt,itemsep=4pt,parsep=0pt]
           \item \small{Working as a consultant designing and building AI systems, RAG-based chatbots, and multi-agent systems using Python, LangChain, LangGraph, and FastAPI, with a focus on rapid prototyping and scalable deployment.}
       \end{itemize}
@@ -81,16 +87,16 @@ AI Engineer with 8 years of software engineering experience, currently specializ
       {Aptos India}{Jan 2023 -- Mar 2026}
       {Machine Learning Engineer}{Bangalore, India}
       \begin{itemize}[leftmargin=1.4em,label=•,topsep=4pt,itemsep=4pt,parsep=0pt]
-          \item \small{Architected a Kubernetes-native ML orchestration control plane with workload-aware scheduling and checkpoint-based recovery for SLA-bound production environments serving 100+ global retailers.}
-          \item \small{Designed secure, fault-tolerant data pipelines on GCP with IAM-based access controls and audit logging, improving processing SLAs by 35\% while cutting compute costs 60\% (about USD 240K annual savings).}
-          \item \small{Built an enterprise-grade RAG support assistant integrating internal knowledge bases with prompt versioning and monitoring, reducing hallucinations by 35\%.}
+          \item \small{Built a RAG-based support chatbot to replace the self-serve documentation portal, enabling users to resolve queries conversationally instead of filing tickets, \textbf{reducing support ticket volume by 30\%}.}
+          \item \small{Architected a Kubernetes-native ML orchestration control plane with workload-aware scheduling and checkpoint-based recovery for SLA-bound production environments \textbf{serving 100+ global retailers}.}
+          \item \small{Designed secure, fault-tolerant data pipelines on GCP with IAM-based access controls and audit logging, \textbf{improving processing SLAs by 35\% while cutting compute costs 60\% (about USD 240K annual savings)}.}
       \end{itemize}
 
   \resumeSubheading
       {Turing.com}{Apr 2022 -- Dec 2022}
       {Senior Software Engineer}{India (Remote)}
       \begin{itemize}[leftmargin=1.4em,label=•,topsep=4pt,itemsep=4pt,parsep=0pt]
-          \item \small{Designed and implemented production-grade ML pipelines using Airflow for ingestion, training, validation, and automated deployment, with standardized CI/CD and model versioning practices that reduced deployment time by 60\%.}
+          \item \small{Designed and implemented production-grade ML pipelines using Airflow for ingestion, training, validation, and automated deployment, with standardized CI/CD and model versioning practices that \textbf{reduced deployment time by 60\%}.}
           \item \small{Integrated monitoring and validation checks to enhance production reliability and maintainability of deployed ML systems.}
       \end{itemize}
 
@@ -98,8 +104,8 @@ AI Engineer with 8 years of software engineering experience, currently specializ
       {Clickpost Pvt. Ltd.}{Apr 2021 -- Apr 2022}
       {Senior Software Engineer}{Bangalore, India}
       \begin{itemize}[leftmargin=1.4em,label=•,topsep=4pt,itemsep=4pt,parsep=0pt]
-          \item \small{Designed and built a high-accuracy financial reconciliation system processing large-scale transactional datasets for 1,000+ enterprise customers with strict data integrity requirements.}
-          \item \small{Reduced reconciliation cycle time by 95\% (from about 2 days to minutes) through parallelized processing and automated validation workflows.}
+          \item \small{Designed and built a high-accuracy financial reconciliation system \textbf{for 1,000+ enterprise customers}, processing large-scale transactional datasets and \textbf{reducing reconciliation cycle time by 95\% (from about 2 days to minutes)} through parallelized processing and automated validation workflows.}
+          \item \small{Built and maintained courier partner integrations and managed the underlying infrastructure on AWS.}
       \end{itemize}
 \resumeSubHeadingListEnd
 
